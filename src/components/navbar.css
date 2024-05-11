@@ -1,0 +1,79 @@
+/* Estilos para el Navbar */
+nav {
+    background-color: #000; /* Cambia el color de fondo a negro */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed; /* Fija el Navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el Navbar esté por encima de otros elementos */
+  }
+  
+  /* Estilos para el contenedor del Navbar */
+  .navbar-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos del Navbar hacia la derecha */
+    width: calc(100% - 2rem); /* Reduce el ancho del contenedor para que quede un poco más a la izquierda */
+    margin-right: auto; /* Ajusta el margen derecho para mover el contenedor hacia la izquierda */
+  }
+  
+  /* Estilos para el logotipo */
+  .navbar-brand {
+    margin-right: auto; /* Mueve el nombre del blog a la izquierda */
+  }
+  
+  .navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el menú */
+  .navbar-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin-left: 1rem;
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-menu {
+      margin-top: 1rem;
+    }
+  
+    .navbar-menu ul {
+      flex-direction: column;
+    }
+  
+    .navbar-menu li {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  }
+  
